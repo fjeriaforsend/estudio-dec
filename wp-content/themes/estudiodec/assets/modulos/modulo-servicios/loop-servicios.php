@@ -1,11 +1,11 @@
 <style>
-    <?php include get_template_directory() . '/assets/modulos/modulo-noticias/noticias.css'; ?>
+    <?php include get_template_directory() . '/assets/modulos/modulo-servicios/servicios.css'; ?>
 </style>
 
-<div id="noticias" class="container">
-<h2 class="title-noticia-home w-100 text-center"><?php the_field('titulo_noticias'); ?></h2>
+<div id="servicios" class="container">
+<h2 class="title-noticia-home w-100 text-center"><?php the_field('titulo_servicios'); ?></h2>
 
-<div class="noticias-contenedor row">
+<div class="servicios-contenedor row">
 
 <?php
 $temp = $wp_query;

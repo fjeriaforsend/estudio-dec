@@ -23,3 +23,53 @@ include get_template_directory() . '/assets/inc/js-functions.php';
 include get_template_directory() . '/assets/inc/menu-functions.php';
 include get_template_directory() . '/assets/inc/modulos-functions.php';
 include get_template_directory() . '/assets/inc/widget-functions.php';
+
+
+
+if( function_exists('acf_add_local_field_group') ):
+
+    acf_add_local_field_group(array(
+        'key' => 'group_634b2731199e9',
+        'title' => 'Campos que hacemos home',
+        'fields' => array(
+            array(
+                'key' => 'field_634b27318ff51',
+                'label' => 'Título que hacemos',
+                'name' => 'titulo_servicios',
+                'type' => 'text',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array(
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => 'Que hacemos',
+                'maxlength' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+            ),
+        ),
+        'location' => array(
+            array(
+                array(
+                    'param' => 'page_template',
+                    'operator' => '==',
+                    'value' => 'page-home.php',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => true,
+        'description' => '',
+        'show_in_rest' => 0,
+    ));
+    
+    endif;		
