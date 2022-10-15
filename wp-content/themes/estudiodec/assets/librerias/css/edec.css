@@ -44,3 +44,16 @@ body {
     background-size: cover;
     background-attachment: fixed;
 }
+
+a.btn-qs-home {
+    background-color: var(--color-azul-claro);
+    padding: 1.2%;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.btn-qs-home:visited {
+    color: unset;
+}
