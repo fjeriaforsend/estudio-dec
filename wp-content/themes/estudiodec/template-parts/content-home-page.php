@@ -16,9 +16,9 @@ if( !empty( $imagebg ) ): ?>
 <article style="background-image: url('<?php echo esc_url($imagebg['url']); ?>')" id="post-<?php the_ID(); ?>" <?php post_class('container-fluid'); ?>>
 
 <div id="noticias" class="container">
-<h2 class="title-noticia-home w-100 text-center"><?php the_field('titulo_quienes_somos'); ?></h2>
+<h2 class="title-noticia-home w-100 text-center mt-5 pt-5"><?php the_field('titulo_quienes_somos'); ?></h2>
 
-<div class="row">
+<div class="row contenedor-sup-qs-home">
 
 <picture class="col-12 col-md-5">
 <?php 

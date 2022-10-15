@@ -35,6 +35,7 @@ while ( have_posts() ) :
 
 endwhile; // End of the loop.
 ?>
+<?php include get_template_directory() . '/assets/modulos/modulo-servicios/loop-servicios.php'; ?>
 
 </main><!-- #main -->
 

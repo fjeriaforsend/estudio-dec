@@ -9,22 +9,31 @@ body {
 
 .title-noticia-int {
     text-transform: uppercase;
-    color: #585858;
+    color: var(--color-gris);
     font-size: 187.5%;
 }
 
 .title-noticia-home {
     text-transform: uppercase;
-    color: #0069AA;
+    color: var(--color-azul-claro);
     font-size: 187.5%;
 }
 
 .date-noticia {
-    color: #707070;
+    color: var(--color-gris);
     font-size: 81.25%;
 }
 
 .date-noticia a {
-    color: #707070;
+    color: var(--color-gris);
     text-decoration: none;
+}
+
+.contenedor-sup-qs-home {
+    margin-top: 6.25%;
+}
+
+.contenedor-qs-home {
+    padding-top: 1.25%;
+    border-top: 7px solid var(--color-azul-oscuro);
 }
