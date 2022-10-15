@@ -70,7 +70,7 @@ if( !empty( $imageed ) ): ?>
 
 <div class="row contenedor-sup-qs-home">
 
-<div class="col-12 col-md-7 contenedor-qs-home"> 
+<div class="col-12 col-md-8 m-auto contenedor-qs-home text-center"> 
 
 <p class="texto-ed-home">
 <?php the_field('info_expediente_digital'); ?>
