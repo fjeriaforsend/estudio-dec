@@ -2,7 +2,7 @@
     <?php include get_template_directory() . '/assets/modulos/modulo-noticias/noticias.css'; ?>
 </style>
 
-<div id="noticias" class="container-fluid">
+<div id="noticias" class="container">
 <h2 class="noticias-titulo"><?php the_field('titulo_noticias'); ?></h2>
 
 <div class="noticias-contenedor row">
@@ -21,13 +21,14 @@ $args = array(
 $wp_query = new WP_Query($args);
 if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
-<div class="card col-12 col-md-4 card-noticia">
-  <div class="card-body">
+<div class="col-12 col-md-4">
+  <div class="card-body card-noticia card">
     <h5 class="card-title title-noticia"> <?php echo get_the_title(); ?></h5>
     <p class="date-noticia"><?php modulos_posted_on(); ?></p>
     <p class="card-text text-noticia"><?php echo get_the_excerpt();  ?></p>
     <a href= "<?php the_permalink(); ?>" class="btn btn-primary btn-noticia">
-    <i class="fa-solid fa-arrow-right"></i></a>
+    <i class="arrow-noticia">→</i>
+  </a>
   </div>
 </div>
 

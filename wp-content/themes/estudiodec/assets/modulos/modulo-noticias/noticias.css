@@ -22,6 +22,11 @@
     font-size: 81.25%;
 }
 
+.date-noticia a {
+    color: #707070;
+    text-decoration: none;
+}
+
 .text-noticia {}
 
 .btn-noticia {
