@@ -26,7 +26,8 @@ if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
     <h5 class="card-title title-noticia"> <?php echo get_the_title(); ?></h5>
     <p class="date-noticia"><?php modulos_posted_on(); ?></p>
     <p class="card-text text-noticia"><?php echo get_the_excerpt();  ?></p>
-    <a href= "<?php the_permalink(); ?>" class="btn btn-primary btn-noticia"><i class="far fa-arrow-right"></i></a>
+    <a href= "<?php the_permalink(); ?>" class="btn btn-primary btn-noticia">
+    <i class="fa-solid fa-arrow-right"></i></a>
   </div>
 </div>
 

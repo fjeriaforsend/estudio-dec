@@ -4,7 +4,22 @@
    Versión: 0.1*/
 
 .card-noticia {
+    position: relative;
     border-top: 7px solid #004A8C;
+    height: 330px;
 }
 
-.title-noticia .date-noticia .text-noticia .btn-noticia
+.title-noticia {}
+
+.date-noticia {}
+
+.text-noticia {}
+
+.btn-noticia {
+    position: absolute;
+    background-color: #0069AA;
+    border-radius: 10px 0px 0px 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 75px;
+}
