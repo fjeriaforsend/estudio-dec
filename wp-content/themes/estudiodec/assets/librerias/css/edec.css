@@ -46,14 +46,15 @@ body {
 }
 
 a.btn-qs-home {
-    background-color: var(--color-azul-claro);
+    background-color: var(--color-azul-oscuro);
     padding: 1.2%;
     color: #fff;
     border-radius: 3px;
     font-size: 100%;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .btn-qs-home:visited {
-    color: unset;
+    color: #fff;
 }
