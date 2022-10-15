@@ -3,7 +3,7 @@
 </style>
 
 <div id="noticias" class="container">
-<h2 class="title-noticia-int w-100 text-center"><?php the_field('titulo_noticias'); ?></h2>
+<h2 class="title-noticia-home w-100 text-center"><?php the_field('titulo_noticias'); ?></h2>
 
 <div class="noticias-contenedor row">
 

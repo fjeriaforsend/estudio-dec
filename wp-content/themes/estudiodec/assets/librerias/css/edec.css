@@ -13,6 +13,12 @@ body {
     font-size: 187.5%;
 }
 
+.title-noticia-home {
+    text-transform: uppercase;
+    color: #0069AA;
+    font-size: 187.5%;
+}
+
 .date-noticia {
     color: #707070;
     font-size: 81.25%;
