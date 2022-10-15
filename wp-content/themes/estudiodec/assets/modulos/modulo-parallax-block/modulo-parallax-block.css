@@ -1,0 +1,33 @@
+.parallax-window {
+    background: transparent;
+    position: relative;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.boton-parallax {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+a.boton-interior {
+    height: 63px;
+    padding: 1%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.boton-interior p {
+    margin: 0px;
+    padding: 0px;
+}

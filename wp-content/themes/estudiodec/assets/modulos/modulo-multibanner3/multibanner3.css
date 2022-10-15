@@ -1,0 +1,38 @@
+#multibannerc .multibanner-titulo{
+    position: relative; 
+    overflow: hidden;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#multibannerc .multibanner-titulo::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #656563;
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    margin-left: 20px;
+}
+#multibannerc .multibanner-contenedor .banner a{
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+#multibannerc .multibanner-contenedor .banner a img{
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+#multibannerc .multibanner-contenedor .banner a:hover img{
+    transform: scale(105%);
+}
+@media (max-width:787px){
+    #multibannerc .multibanner-contenedor .banner a{
+        display: unset;
+    }
+}

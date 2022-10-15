@@ -1,0 +1,13 @@
+#modulo-product-tabs ul {
+    margin: 0px;
+}
+
+.modulo-product-tabs button h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modulo-product-tabs button h5 i {
+    margin: 0 10px 0 0;
+}

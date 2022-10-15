@@ -1,0 +1,165 @@
+    html{
+        scroll-behavior: smooth;
+    }
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    textarea,
+    input,
+    main,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+        font-size: 100%;
+        font: inherit;
+        font-family: inherit;
+        font-family: Lato, sans-serif;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    a, a:hover, a:focus, a:visited, a:link{
+        color: inherit;
+    }
+    ol,
+    ul {
+        list-style: none;
+    }
+    
+    body {
+        font-family: var(--titan-typo);
+        font-size: 16px;
+        background-color: #efefef;
+    }
+    
+    .post,
+    .page {
+        margin: 0 0 0em;
+    }
+    /*tipo*/
+
+    
+    /*titulos*/
+    
+    h1,
+    .h1 {
+        font-family: var(--titan-title-typo);
+    }
+    
+    .h1.titulo {
+        font-size: var(--h2);
+    }
+    
+    h2,
+    .h2 {
+        font-size: var(--h2);
+        font-weight: var(--grosor-medium);
+        margin: var(--margen-inferior-titulos);
+    }
+    
+    h3,
+    .h3 {
+        font-size: var(--h3);
+        font-weight: var(--grosor-medium);
+        margin: var(--margen-inferior-titulos);
+    }
+    
+    h4,
+    .h4 {
+        font-family: var(--titan-title-typo);
+        font-size: 1.5rem;
+    }
+    
+    h5,
+    .h5 {
+        font-family: var(--titan-title-typo);
+        font-size: 1.25rem;
+    }
+    
+    h6,
+    .h6 {
+        font-family: var(--titan-title-typo);
+        font-size: 1rem;
+    }
+    
+    a:visited {
+        color: unset;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
