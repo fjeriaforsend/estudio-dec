@@ -10,7 +10,7 @@
 ?>
 
 <?php 
-$imagebg = get_field('foto_quienes_somos');
+$imagebg = get_field('fondo_quienes_somos');
 if( !empty( $imagebg ) ): ?>
 
 <article style="background-image: url('<?php echo esc_url($imagebg['url']); ?>')" id="post-<?php the_ID(); ?>" <?php post_class('container-fluid'); ?>>
