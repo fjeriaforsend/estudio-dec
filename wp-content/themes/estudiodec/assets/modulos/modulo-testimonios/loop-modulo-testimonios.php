@@ -1,18 +1,19 @@
 <style>
-    <?php include get_template_directory() . '/assets/modulos/modulo-servicios/servicios.css'; ?>
+<?php include get_template_directory() . '/assets/modulos/modulo-testimonios/testimonios.css';
+?>
 </style>
 
-<div id="servicios" class="container">
-<h2 class="title-noticia-home w-100 text-center"><?php the_field('titulo_servicios'); ?></h2>
+<div id="testimonios" class="container">
+    <h2 class="title-noticia-home w-100 text-center"><?php the_field('titulo_testimonios'); ?></h2>
 
-<div class="servicios-contenedor row">
+    <div class="testimonios-contenedor row">
 
-<?php
+        <?php
 $temp = $wp_query;
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-$post_per_page = -1; // -1 shows all posts
+$post_per_page = 3; // -1 shows all posts
 $args = array(
-    'post_type' => 'servicios',
+    'post_type' => 'testimonios',
     'orderby' => 'date',
     'order' => 'DESC',
     'paged' => $paged,
@@ -21,23 +22,31 @@ $args = array(
 $wp_query = new WP_Query($args);
 if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
-<div class="col-12 col-md-4">
-  <div class="card-body card-servicios card">
-    <h5 class="card-title title-servicios"> <?php echo get_the_title(); ?></h5>
-    
-    <p class="card-text text-servicios"><?php echo get_the_excerpt();  ?></p>
-    <a href= "<?php the_permalink(); ?>" class="btn btn-primary btn-servicios">
-    <i class="arrow-servicios">→</i>
-  </a>
-  </div>
-</div>
+        <div class="col-12 col-md-4">
+            <div class="card-body card-testimonios card">
 
-<?php endwhile; ?>
-<?php else : ?>
-<p class="text-center title-sm">Oops!, Lo sentimos, no hay contenido que mostrar</p>
-<?php endif;
+                <picture
+                    class="col-12 col-md-10 m-auto d-flex justify-content-center align-items-center img-testimonio">
+                    <?php 
+$image = get_field('foto_persona');
+if( !empty( $image ) ): ?>
+                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                    <?php endif; ?>
+                </picture>
+                <div class="shadow-sm contenedor-datos-testimonio">
+                    <p class="card-text text-testimonios"><?php the_field('testimonio_persona'); ?></p>
+                    <h5 class="card-title title-testimonios"> <?php the_field('nombre_de_la_persona'); ?></h5>
+                    <p class="card-text text-testimonios"><?php the_field('cargo_de_la_persona'); ?></p>
+                </div>
+            </div>
+        </div>
+
+        <?php endwhile; ?>
+        <?php else : ?>
+        <p class="text-center title-sm">Oops!, Lo sentimos, no hay contenido que mostrar</p>
+        <?php endif;
 wp_reset_query();
 $wp_query = $temp ?>
-    
-</div>
+
+    </div>
 </div>

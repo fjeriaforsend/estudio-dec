@@ -1,35 +1,54 @@
-/* Módulos servicios   
-   Autor: Francisco Jeria/ Vladimir Draguicevic
+/* Módulos testimonios   
+   Autor: Vladimir Draguicevic
    Fecha: 15/1072022
    Versión: 0.1*/
 
-.card-servicios {
+.card-testimonios {
     position: relative;
-    border: 7px solid #004A8C;
-    height: 330px;
+    border: 1px solid #DCDCDC;
+    height: auto;
+    max-height: 500px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
 }
 
-.title-servicios {
-    font-size: 125%;
-    text-transform: uppercase;
+.img-testimonio {
+    position: relative;
+    top: 50px;
+}
+
+.img-testimonio img {
+    border-radius: 100px;
+    border: 1px solid rgb(212, 212, 212);
+}
+
+.contenedor-datos-testimonio {
+    padding: 1rem;
+    padding-top: 1rem;
+    max-height: 400px;
+    min-height: 300px;
+    padding-top: 4rem;
+}
+
+.title-testimonios {
+    font-size: 100%;
     color: #0069AA;
-    border-bottom: 1px solid #004A8C;
-    min-height: 65px;
 }
 
-.date-servicios {
+.date-testimonios {
     color: #707070;
     font-size: 81.25%;
 }
 
-.date-servicios a {
+.date-testimonios a {
     color: #707070;
     text-decoration: none;
 }
 
-.text-servicios {}
+.text-testimonios {}
 
-.btn-servicios {
+.btn-testimonios {
     position: absolute;
     background-color: #0069AA;
     border-radius: 10px 0px 0px 0px;
@@ -38,6 +57,6 @@
     width: 75px;
 }
 
-.arrow-servicios {
+.arrow-testimonios {
     font-size: 120%;
 }
