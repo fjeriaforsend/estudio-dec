@@ -9,7 +9,13 @@
     height: 330px;
 }
 
-.title-noticia {}
+.title-noticia {
+    font-size: 125%;
+    text-transform: uppercase;
+    color: #0069AA;
+    border-bottom: 1px solid #004A8C;
+    min-height: 65px;
+}
 
 .date-noticia {}
 
