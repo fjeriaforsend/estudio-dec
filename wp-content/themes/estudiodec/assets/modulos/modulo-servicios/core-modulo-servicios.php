@@ -29,7 +29,7 @@ function servicios_register() {
         'hierarchical' => false,
         'menu_position' => null,
         /*'taxonomies'	=> array( 'categoria-servicios', 'etiqueta-servicios', ), */
-        'supports' => array( 'title', 'custom-fields', 'excertp'),
+        'supports' => array( 'title', 'custom-fields', 'excerpt'),
         'rewrite' => array('slug' => 'servicios', 'with_front' => false)
       ); 
 
