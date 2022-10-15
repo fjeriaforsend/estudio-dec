@@ -13,7 +13,7 @@
 $imagebg = get_field('foto_quienes_somos');
 if( !empty( $imagebg ) ): ?>
 
-<article style="background-image: url('<?php echo esc_url($imagebg['url']); ?>') id="post-<?php the_ID(); ?>" <?php post_class('container-fluid'); ?>>
+<article style="background-image: url('<?php echo esc_url($imagebg['url']); ?>')" id="post-<?php the_ID(); ?>" <?php post_class('container-fluid'); ?>>
 
 <div id="noticias" class="container">
 <h2 class="title-noticia-home w-100 text-center"><?php the_field('titulo_quienes_somos'); ?></h2>
