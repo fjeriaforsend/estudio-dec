@@ -51,6 +51,12 @@ if( !empty( $image ) ): ?>
 
 <?php endif; ?>
 
+<!--testimonios-->
+<?php include get_template_directory() . '/assets/modulos/modulo-servicios/loop-modulo-servicios.php'; ?>
+
+<!--testimonios--> 
+
+
 <!--- Sección expediente digital --->
 
 <?php 
@@ -66,7 +72,7 @@ if( !empty( $imageed ) ): ?>
 
 <div class="col-12 col-md-7 contenedor-qs-home"> 
 
-<p class="texto-qs-home">
+<p class="texto-ed-home">
 <?php the_field('info_expediente_digital'); ?>
 </p>
 
