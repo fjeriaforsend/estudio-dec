@@ -25,9 +25,9 @@ $wp_query = new WP_Query($args);
 if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 <div class="texto-slider w-100 ps-1 ps-md-5">
     <div class="contenido-texto col-12 col-md-5 ps-1 ms-1 ms-md-5 ps-md-5">
-      <h2>hola soy un titulo</h2>
-      <p>hola soy un parrado</p>
-      <a href="#">Ver más</a>
+      <h2 class="titulo-slider"><?php the_field('titulo_slider');?></h2>
+      <p class="texto-slider"><?php the_field('texto_slider');?></p>
+      <a class="link" href="<?php the_field('link_del_slider');?>">Ver más</a>
 </div>
 </div>
         <div style="min-height:<?php the_field('altura_slider');?>px; height:<?php the_field('altura_slider');?>px;" class="carousel-item <?php the_field('ancho_del_slider');?> <?php if($i == 0){ echo "active"; };?>">

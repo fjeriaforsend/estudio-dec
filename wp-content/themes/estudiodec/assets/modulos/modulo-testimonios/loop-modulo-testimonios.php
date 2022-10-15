@@ -23,7 +23,7 @@ $wp_query = new WP_Query($args);
 if (have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
         <div class="col-12 col-md-4">
-            <div class="card-body card-testimonios card">
+            <div class="card-body card-testimonios card border-none">
 
                 <picture
                     class="col-12 col-md-10 m-auto d-flex justify-content-center align-items-center img-testimonio">
@@ -33,10 +33,10 @@ if( !empty( $image ) ): ?>
                     <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
                     <?php endif; ?>
                 </picture>
-                <div class="shadow-sm contenedor-datos-testimonio">
+                <div class="shadow-lg contenedor-datos-testimonio">
                     <p class="card-text text-testimonios"><?php the_field('testimonio_persona'); ?></p>
                     <h5 class="card-title title-testimonios"> <?php the_field('nombre_de_la_persona'); ?></h5>
-                    <p class="card-text text-testimonios"><?php the_field('cargo_de_la_persona'); ?></p>
+                    <p class="card-text text-testimonios small"><?php the_field('cargo_de_la_persona'); ?></p>
                 </div>
             </div>
         </div>
