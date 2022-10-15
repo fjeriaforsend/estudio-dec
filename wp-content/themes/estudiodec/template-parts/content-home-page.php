@@ -9,12 +9,18 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('container-fluid'); ?>>
+<?php 
+$imagebg = get_field('foto_quienes_somos');
+if( !empty( $imagebg ) ): ?>
+
+<article style="background-image: url('<?php echo esc_url($imagebg['url']); ?>') id="post-<?php the_ID(); ?>" <?php post_class('container-fluid'); ?>>
 
 <div id="noticias" class="container">
-<h2 class="title-noticia-home w-100 text-center"><?php the_field('titulo_noticias'); ?></h2>
+<h2 class="title-noticia-home w-100 text-center"><?php the_field('titulo_quienes_somos'); ?></h2>
 
-<picture>
+<div class="row">
+
+<picture class="col-12 col-md-5">
 <?php 
 $image = get_field('foto_quienes_somos');
 if( !empty( $image ) ): ?>
@@ -22,8 +28,24 @@ if( !empty( $image ) ): ?>
 <?php endif; ?>
 </picture>
 
+<div class="col-12 col-md-7 contenedor-qs-home"> 
 
+<p class="texto-qs-home">
+<?php the_field('info_quienes_somos'); ?>
+</p>
+
+<a class="btn-qs-home" href="<?php the_field('boton_conoce_equipo') ?>">
+
+Conoce al equipo
+</a>
+
+</div>
+
+</div>
 
 </div>
 
 </article><!-- #post-<?php the_ID(); ?> -->
+
+
+<?php endif; ?>
