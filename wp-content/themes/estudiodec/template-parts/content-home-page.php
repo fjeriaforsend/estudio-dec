@@ -51,11 +51,11 @@ if( !empty( $image ) ): ?>
 
 <?php endif; ?>
 
-<!--testimonios-->
+
+<!--servicios-->
 <?php include get_template_directory() . '/assets/modulos/modulo-servicios/loop-modulo-servicios.php'; ?>
 
-<!--testimonios--> 
-
+<!--servicios-->
 
 <!--- Sección expediente digital --->
 
@@ -93,3 +93,8 @@ if( !empty( $imageed ) ): ?>
 <?php endif; ?>
 
 <!--- Sección expediente digital --->
+
+<!--testimonios-->
+<?php include get_template_directory() . '/assets/modulos/modulo-servicios/loop-modulo-servicios.php'; ?>
+
+<!--testimonios--> 
