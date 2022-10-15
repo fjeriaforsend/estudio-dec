@@ -205,3 +205,46 @@
 
 
 /*carrusel oferta*/
+
+
+/*estilos estudio DEC*/
+
+.carousel-item {
+    position: relative;
+}
+
+.carousel-item::after {
+    content: '';
+    left: 0px;
+    top: 0px;
+    display: block;
+    background-color: #0069AA70;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    backdrop-filter: blur(3px);
+}
+
+.video-slider-bg {
+    width: 100%;
+}
+
+.texto-slider {
+    position: absolute;
+    z-index: 2;
+}
+
+.contenido-texto {
+    background-color: #ffffff75;
+    border-radius: 3px;
+    height: auto;
+    backdrop-filter: blur(10px);
+}
+
+.texto-slider {
+    height: 550px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}

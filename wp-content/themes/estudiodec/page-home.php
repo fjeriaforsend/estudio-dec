@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: home page modulos
+ * Template Name: home estudio DEC 
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -14,57 +14,29 @@
 
 get_header();
 ?>
-	<h1>Modulos auto administrables disponibles para Comercio 4</h1>
-<hr>
-
 
 <?php include get_template_directory() . '/assets/modulos/modulo-slider/loop-modulo-slider.php';?>
 
 
+<main id="primary" class="site-main">
 
+<?php include get_template_directory() . '/assets/modulos/modulo-noticias/loop-noticias.php'; ?>
 
-
-
-
-<main id="primary" class="site-main container">
-
-	<h2>Modulo Info box</h2>
 <?php
-	include get_template_directory() . '/assets/modulos/modulo-infobox/loop-modulo-infobox.php';
+while ( have_posts() ) :
+	the_post();
+
+	get_template_part( 'template-parts/content', 'page' );
+
+	// If comments are open or we have at least one comment, load up the comment template.
+	if ( comments_open() || get_comments_number() ) :
+		comments_template();
+	endif;
+
+endwhile; // End of the loop.
 ?>
 
-<hr>
-
-
-
-	<h2>Modulo de tabs.</h2>
-		<?php
-			include get_template_directory() . '/assets/modulos/modulo-product-tabs/loop-modulo-product-tabs.php';
-		?>
-
-		<hr>
-
-		<h2>Modulo de banner</h2>
-		<?php
-			include get_template_directory() . '/assets/modulos/modulo-banner/loop-modulo-banner.php';
-		?>
-
-<hr>
-
-<h2>Modulo card Maker</h2>
-<?php
-	include get_template_directory() . '/assets/modulos/modulo-boxinfo/loop-modulo-boxinfo.php';
-?>
-
-<h2>Modulo parallax</h2>
-<?php
-	include get_template_directory() . '/assets/modulos/modulo-parallax-block/loop-parallax-block.php';
-?>
-
-<hr>
-
-
-	</main><!-- #main -->
+</main><!-- #main -->
 
 <?php
 get_sidebar();

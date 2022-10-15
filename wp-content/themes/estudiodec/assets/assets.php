@@ -4,8 +4,6 @@
  * funciones básicas de comercio
  */
 
-include get_template_directory() . '/assets/customizer/comercio-color-icon.php';
-
 /*assets styles*/
 add_post_type_support('page', 'excerpt');
 
