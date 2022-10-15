@@ -17,7 +17,10 @@
     min-height: 65px;
 }
 
-.date-noticia {}
+.date-noticia {
+    color: #707070;
+    font-size: 81.25%;
+}
 
 .text-noticia {}
 
