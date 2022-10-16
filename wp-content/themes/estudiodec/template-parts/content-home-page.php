@@ -95,6 +95,13 @@ if( !empty( $imageed ) ): ?>
 <!--- Sección expediente digital --->
 
 <!--testimonios-->
+
 <?php include get_template_directory() . '/assets/modulos/modulo-testimonios/loop-modulo-testimonios.php'; ?>
 
-<!--testimonios--> 
+<!--testimonios-->
+
+<!--contacto-->
+
+<?php include get_template_directory() . '/assets/modulos/modulo-contacto/loop-modulo-contacto.php'; ?>
+
+<!--contacto--> 

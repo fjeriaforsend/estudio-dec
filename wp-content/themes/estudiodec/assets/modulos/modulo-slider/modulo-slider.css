@@ -248,3 +248,15 @@
     justify-content: start;
     align-items: center;
 }
+
+.titulo-slider {
+    color: #3f3f3f;
+}
+
+.contenido-texto .link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    margin-top: 2rem;
+}
