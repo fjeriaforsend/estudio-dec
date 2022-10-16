@@ -4,13 +4,13 @@
 </style>
 
 <div id="testimonios" class="container">
-    <h2 class="title-noticia-home w-100 text-center"><?php the_field('titulo_testimonios'); ?></h2>
+    <h2 class="title-noticia-home w-100 text-center"><?php the_field(''); ?></h2>
 
     <div class="testimonios-contenedor row">
 
         <?php
 $temp = $wp_query;
-$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;titulo_testimonios
 $post_per_page = 3; // -1 shows all posts
 $args = array(
     'post_type' => 'testimonios',
